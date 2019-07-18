@@ -194,7 +194,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clock.jsx */ "./frontend/clock.jsx");
 /* harmony import */ var _tabs_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs.jsx */ "./frontend/tabs.jsx");
 /* harmony import */ var _weather_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./weather.jsx */ "./frontend/weather.jsx");
-/* harmony import */ var _weather_jsx__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_weather_jsx__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -213,7 +212,7 @@ var PROPS = [{
 var Root = function Root(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_clock_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tabs_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     group: PROPS
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_weather_jsx__WEBPACK_IMPORTED_MODULE_3___default.a, null));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_weather_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Root);
@@ -311,10 +310,78 @@ function (_React$Component) {
 /*!******************************!*\
   !*** ./frontend/weather.jsx ***!
   \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/frontend/weather.jsx: Unexpected token (11:2)\n\n\u001b[0m \u001b[90m  9 | \u001b[39m\t\t\u001b[36mreturn\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m 10 | \u001b[39m\t\t\t\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 | \u001b[39m\t\t)\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\t\t\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 | \u001b[39m\t}\u001b[0m\n\u001b[0m \u001b[90m 13 | \u001b[39m}\u001b[0m\n\u001b[0m \u001b[90m 14 | \u001b[39m\u001b[0m\n    at Object.raise (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:6325:17)\n    at Object.unexpected (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:7642:16)\n    at Object.parseParenAndDistinguishExpression (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9010:12)\n    at Object.parseExprAtom (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:8762:21)\n    at Object.parseExprAtom (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:3601:20)\n    at Object.parseExprSubscripts (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:8412:23)\n    at Object.parseMaybeUnary (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:8392:21)\n    at Object.parseExprOps (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:8267:23)\n    at Object.parseMaybeConditional (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:8240:23)\n    at Object.parseMaybeAssign (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:8187:21)\n    at Object.parseExpression (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:8135:23)\n    at Object.parseReturnStatement (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10198:28)\n    at Object.parseStatementContent (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9877:21)\n    at Object.parseStatement (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9829:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10405:25)\n    at Object.parseBlockBody (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10392:10)\n    at Object.parseBlock (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10376:10)\n    at Object.parseFunctionBody (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9424:24)\n    at Object.parseFunctionBodyAndFinish (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9394:10)\n    at Object.parseMethod (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9348:10)\n    at Object.pushClassMethod (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10804:30)\n    at Object.parseClassMemberWithIsStatic (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10729:12)\n    at Object.parseClassMember (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10668:10)\n    at /Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10623:14\n    at Object.withTopicForbiddingContext (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9702:14)\n    at Object.parseClassBody (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10600:10)\n    at Object.parseClass (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10574:22)\n    at Object.parseStatementContent (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9871:21)\n    at Object.parseStatement (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:9829:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/hamedwaiz/Downloads/curriculum-master/react/Examples/Widgets/node_modules/@babel/parser/lib/index.js:10405:25)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Weather =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Weather, _React$Component);
+
+  function Weather(props) {
+    _classCallCheck(this, Weather);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Weather).call(this, props));
+  }
+
+  _createClass(Weather, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var xhr = new XMLHttpRequest();
+
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 400) {
+            var data = JSON.parse(xhr.responseText);
+            var temp = data.main.temp;
+            var f_temp = Math.round((temp - 273.15) * 1.8 + 32);
+            document.querySelector('.weather').innerHTML = "The Current Weather in ".concat(data.name, " is: ").concat(f_temp);
+          } else {
+            alert("wrong request");
+          }
+        };
+
+        xhr.open('GET', "http://api.openweathermap.org/data/2.5/weather?lat=".concat(position.coords.latitude, "&lon=").concat(position.coords.longitude, "&APPID=25a02137091c733c296cb55b5448666b"), true);
+        xhr.send();
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "weather"
+      }, this.componentDidMount.bind(this));
+    }
+  }]);
+
+  return Weather;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Weather);
 
 /***/ }),
 
