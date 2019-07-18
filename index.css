@@ -1,0 +1,16 @@
+ul {
+	list-style: none;
+}
+
+li {
+	border: 1px solid red;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+li:hover {
+	background-color: green;
+	cursor: pointer;
+}
