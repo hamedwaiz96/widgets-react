@@ -1,3 +1,21 @@
+#root {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.input {
+	display: flex;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: auto;
+}
+
 ul {
 	list-style: none;
 }
@@ -12,5 +30,24 @@ li {
 
 li:hover {
 	background-color: green;
+	cursor: pointer;
+}
+
+.autocomplete {
+	margin: 0 50%;
+}
+
+.autocomplete > ul {
+	padding: 0;
+	float: left;
+}
+
+.autocomplete > input {
+	margin: auto;
+	float: left;
+}
+
+.autocomplete > ul > li:hover {
+	background-color: orange;
 	cursor: pointer;
 }

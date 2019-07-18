@@ -86,6 +86,99 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./frontend/autocomplete.jsx":
+/*!***********************************!*\
+  !*** ./frontend/autocomplete.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Autocomplete =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Autocomplete, _React$Component);
+
+  function Autocomplete(props) {
+    var _this;
+
+    _classCallCheck(this, Autocomplete);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Autocomplete).call(this, props));
+    _this.names = _this.props.names;
+    _this.state = {
+      search: ""
+    };
+    return _this;
+  }
+
+  _createClass(Autocomplete, [{
+    key: "inputChange",
+    value: function inputChange(e) {
+      var new_val = e.target.value;
+      this.setState({
+        search: new_val
+      });
+    }
+  }, {
+    key: "complete",
+    value: function complete(name) {
+      this.setState({
+        search: "".concat(name)
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var self = this;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "autocomplete"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "input"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Enter Name Here:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        onChange: this.inputChange.bind(this),
+        value: self.state.search
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, this.names.map(function (value, index) {
+        var low_val = value.toLowerCase();
+        var low_search = self.state.search.toLowerCase();
+        return low_val.includes(low_search) ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          key: index,
+          onClick: self.complete.bind(self, value)
+        }, value) : "";
+      })));
+    }
+  }]);
+
+  return Autocomplete;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Autocomplete);
+
+/***/ }),
+
 /***/ "./frontend/clock.jsx":
 /*!****************************!*\
   !*** ./frontend/clock.jsx ***!
@@ -194,6 +287,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clock.jsx */ "./frontend/clock.jsx");
 /* harmony import */ var _tabs_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs.jsx */ "./frontend/tabs.jsx");
 /* harmony import */ var _weather_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./weather.jsx */ "./frontend/weather.jsx");
+/* harmony import */ var _autocomplete_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./autocomplete.jsx */ "./frontend/autocomplete.jsx");
+
 
 
 
@@ -208,11 +303,14 @@ var PROPS = [{
   title: 'yahoo',
   content: 'hello my name is yahoo and i like yahoo!'
 }];
+var names = ['Gabriel', 'Charlie', 'Melissa', 'Chelsea', 'Max', 'William', 'Rodger', 'Crystal', 'Andre', 'Hildegard', 'Mercedes', 'Jamie', 'Eliseo'];
 
 var Root = function Root(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_clock_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tabs_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     group: PROPS
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_weather_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_weather_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_autocomplete_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    names: names
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Root);
